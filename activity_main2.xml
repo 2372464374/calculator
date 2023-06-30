@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/cal_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#FFFFE0"
+        android:gravity="bottom|right"
+        android:padding="10dp"
+        android:rotationX="2"
+        android:textSize="60sp" />
+    <!--    输入数据框-->
+    <EditText
+        android:id="@+id/cal_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFE0"
+        android:gravity="bottom|right"
+        android:padding="10dp"
+        android:rotationX="2"
+        android:text="0"
+        android:textSize="60sp" />
+    <!--运算框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="5"
+        android:background="#C0C0C0">
+        <!--        数字及AC 正负 SIN 根号 小数-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <!--                AC-->
+                <Button
+                    android:id="@+id/acbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="AC"
+                    android:textSize="30sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                +/- -->
+                <Button
+                    android:id="@+id/zhengfubtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="+/-"
+                    android:textSize="30sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                SIN-->
+                <Button
+                    android:id="@+id/sinbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="sin"
+                    android:textSize="30sp"
+                    android:layout_margin="3dp"></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <!--数字7-->
+                <Button
+                    android:id="@+id/sevenbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="7"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                数字8-->
+                <Button
+                    android:id="@+id/eightbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="8"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                数字9-->
+                <Button
+                    android:id="@+id/ninebtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="9"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <!--                数字4-->
+                <Button
+                    android:id="@+id/fourbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                数字5-->
+                <Button
+                    android:id="@+id/fivebtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="5"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                数字6-->
+                <Button
+                    android:id="@+id/sixbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="6"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <!--                数字1-->
+                <Button
+                    android:id="@+id/onebtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                数字2-->
+                <Button
+                    android:id="@+id/twobtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+                <!--                数字3-->
+                <Button
+                    android:id="@+id/threebtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="10"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <!--            数字0-->
+                <Button
+                    android:id="@+id/zerobtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:layout_margin="3dp"/>
+                <!--            小数点-->
+                <Button
+                    android:id="@+id/decbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="."
+                    android:textSize="50sp"
+                    android:layout_margin="3dp"/>
+                <!--            根号-->
+                <Button
+                    android:id="@+id/radbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="√"
+                    android:textSize="50sp"
+                    android:layout_margin="3dp"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <!--            运算符号/-->
+            <Button
+                android:id="@+id/divbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:text="÷"
+                android:textSize="50sp"></Button>
+            <!--            运算符号*-->
+            <Button
+                android:id="@+id/mulbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:text="×"
+                android:textSize="50sp"></Button>
+            <!--            运算符号- -->
+            <Button
+                android:id="@+id/minbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:text="-"
+                android:textSize="50sp"></Button>
+            <!--            运算符号+-->
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:text="+"
+                android:textSize="50sp"></Button>
+            <!--            运算符号=-->
+            <Button
+                android:id="@+id/equbtn"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:text="="
+                android:textSize="50sp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
